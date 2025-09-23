@@ -1,3 +1,7 @@
+/**
+ * Módulo principal de la aplicación sliderApp.
+ * Define los paquetes exportados y los módulos requeridos para el funcionamiento de la app JavaFX.
+ */
 module es.wara {
     requires javafx.controls;
     requires javafx.fxml;
