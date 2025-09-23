@@ -62,8 +62,9 @@ public class SliderApp extends Application {
 
         // Configuración de la ventana
         stage.setScene(scene);
-        stage.setMinHeight(480);
-        stage.setMinWidth(340);
+        stage.setMinHeight(400);
+        stage.setMinWidth(400);
+        stage.setResizable(false);
 
         loger.debug("Mostrando la ventana principal.");
         stage.show();
