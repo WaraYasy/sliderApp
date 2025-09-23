@@ -1,0 +1,27 @@
+/* Estilo de la VBox principal */
+VBox {
+    -fx-padding: 20;
+    -fx-border-color: #20959E;
+    -fx-border-width: 2;
+    -fx-background-color: white;
+    -fx-font-family: "Verdana", sans-serif;
+    -fx-border-radius: 5;
+}
+
+/* Labels en negrita */
+Label {
+    -fx-font-weight: bold;
+}
+
+/* Estilo general para rectángulos */
+Rectangle {
+    -fx-border-color: black;
+    -fx-border-radius: 5;
+}
+
+/* Label del color clickeable */
+.lblColor {
+    -fx-padding: 20;
+    -fx-text-fill: #20959E;
+    -fx-underline: true;
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="437.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.wara.PaletaController">
+   <children>
+      <Rectangle fx:id="rectangulo" arcHeight="50.0" arcWidth="50.0" fill="#f6d0ff" height="103.0" stroke="#948a8a" strokeType="INSIDE" width="316.0" />
+      <Label fx:id="lblColor" onMouseClicked="#copiaPortapapeles" styleClass="lblColor" text="RGB (0,0,0)">
+         <tooltip>
+            <Tooltip text="Clic para guardar en portapapeles" />
+         </tooltip></Label>
+      <HBox alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="437.0">
+         <children>
+            <Label text="Desplaza los sliders para cambiar el color: " />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label alignment="TOP_LEFT" text="Rojo:" textAlignment="CENTER" />
+            <Slider fx:id="sldRojo" majorTickUnit="85.0" max="255.0" prefHeight="16.0" prefWidth="285.0" showTickLabels="true" showTickMarks="true">
+               <tooltip>
+                  <Tooltip text="Ajusta la intensidad del color rojo " />
+               </tooltip></Slider>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label text="Verde:" />
+            <Slider fx:id="sldVerde" majorTickUnit="85.0" max="255.0" prefHeight="16.0" prefWidth="285.0" showTickLabels="true" showTickMarks="true">
+               <tooltip>
+                  <Tooltip text="Ajusta la intensidad del color verde" />
+               </tooltip></Slider>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label text="Azúl:" />
+            <Slider fx:id="sldAzul" majorTickUnit="85.0" max="255.0" prefHeight="16.0" prefWidth="285.0" showTickLabels="true" showTickMarks="true">
+               <tooltip>
+                  <Tooltip text="Ajusta la intensidad del color azúl" />
+               </tooltip></Slider>
+         </children>
+      </HBox>
+   </children>
+</VBox>
